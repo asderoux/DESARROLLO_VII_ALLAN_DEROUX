@@ -1,5 +1,5 @@
 <?php
-// Función para calcular el descuento basado en el total de la compra
+
 function calcular_descuento($total_compra) {
     if ($total_compra < 100) {
         return 0;
@@ -12,12 +12,12 @@ function calcular_descuento($total_compra) {
     }
 }
 
-// Función para aplicar el impuesto del 7%
+
 function aplicar_impuesto($subtotal) {
     return $subtotal * 0.07;
 }
 
-// Función para calcular el total a pagar
+
 function calcular_total($subtotal, $descuento, $impuesto) {
     return $subtotal - $descuento + $impuesto;
 }
