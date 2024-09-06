@@ -12,36 +12,10 @@ $frases = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 echo "<table border='1'>";
 echo "<tr><th>Frase</th><th>Número de Palabras</th><th>Número de Vocales</th><th>Palabras Invertidas</th></tr>";
 
-// Bucle para procesar cada frase con las tres funciones
+
 foreach ($frases as $frase) {
     $num_palabras = contar_palabras($frase);
     $num_vocales = contar_vocales($frase);
